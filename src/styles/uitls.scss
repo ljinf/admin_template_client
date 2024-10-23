@@ -1,0 +1,81 @@
+// global transition css
+
+/* fade */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.28s;
+}
+
+.fade-enter,
+.fade-leave-active {
+  opacity: 0;
+}
+
+/* fade-transform */
+.fade-transform-leave-active,
+.fade-transform-enter-active {
+  transition: all 0.5s;
+}
+
+.fade-transform-enter {
+  opacity: 0;
+  transform: translateX(-30px);
+}
+
+.fade-transform-leave-to {
+  opacity: 0;
+  transform: translateX(30px);
+}
+
+/* breadcrumb transition */
+.breadcrumb-enter-active,
+.breadcrumb-leave-active {
+  transition: all 0.5s;
+}
+
+.breadcrumb-enter,
+.breadcrumb-leave-active {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+.breadcrumb-move {
+  transition: all 0.5s;
+}
+
+.breadcrumb-leave-active {
+  position: absolute;
+}
+
+/* utils */
+.text-center {
+  text-align: center;
+}
+.text-primary {
+  color: var(--theme) !important;
+}
+.text-info {
+  color: #909399 !important;
+}
+.text-success {
+  color: #13ce66 !important;
+}
+.text-warning {
+  color: #ffba00 !important;
+}
+.text-danger {
+  color: #ff4949 !important;
+}
+
+// 常用工具类
+.w-100r {
+  width: 100%;
+}
+
+.h-100r {
+  height: 100%;
+}
+
+.flex-1 {
+  flex: 1;
+}

@@ -1,0 +1,144 @@
+// cover or reset some element-ui styles
+.el-breadcrumb__inner,
+.el-breadcrumb__inner a {
+  font-weight: 400 !important;
+}
+
+// dropdown
+.el-dropdown-menu {
+  a {
+    display: block;
+  }
+}
+
+// avue 样式修改
+.avue-crud {
+  .avue-crud__header {
+    margin-bottom: 0;
+    min-height: 38px;
+  }
+  .avue-crud__tip {
+    &.el-tag--mini {
+      height: 32px;
+      padding: 0 10px;
+      width: 100%;
+      line-height: 30px;
+    }
+  }
+  .table-header-cell-class {
+    color: #000 !important;
+    font-weight: bold !important;
+    background-color: #f8f8f8 !important;
+    border-color: #f2f2f2 !important;
+    .cell {
+      white-space: pre-wrap !important;
+    }
+  }
+
+  .table-row-class {
+    border-color: #f2f2f2 !important;
+  }
+
+  .el-table {
+    &::before {
+      background-color: #f2f2f2 !important;
+    }
+  }
+  .el-table--group,
+  .el-table--border {
+    border-color: #f2f2f2 !important;
+  }
+  .avue-crud__pagination {
+    padding: 15px 0 15px 20px;
+    position: relative;
+    .el-pagination {
+      .el-pagination__total {
+        position: absolute;
+        left: 0;
+        top: 8px;
+        line-height: auto;
+        .btn-prev,
+        .btn-next {
+          border-radius: 1px;
+        }
+      }
+      .el-pager {
+        .number {
+          border-radius: 1px;
+        }
+      }
+    }
+  }
+}
+
+//开关样式
+.el-switch__core {
+  width: 60px !important;
+}
+.el-switch__label {
+  width: 48px;
+  font-size: 10px;
+  position: absolute;
+  transform: scale(0.8);
+  text-align: center;
+  color: #fff;
+  white-space: nowrap;
+  &.el-switch__label--right {
+    z-index: -1;
+    color: #fff !important;
+    right: 15px;
+    &.is-active {
+      z-index: 1;
+    }
+  }
+  &.el-switch__label--left {
+    z-index: -1;
+    color: #fff !important;
+    left: 15px;
+    &.is-active {
+      z-index: 1;
+    }
+  }
+}
+
+// el-tree主题有问题
+.el-tree-node.is-current > .el-tree-node__content {
+  color: var(--theme) !important;
+  background-color: var(--menuHoverBg) !important;
+}
+.columnset {
+  .el-tree-node.is-current > .el-tree-node__content {
+    color: inherit !important;
+    background-color: transparent !important;
+  }
+}
+
+// 左上角总条数
+.total-left {
+  padding-top: 10px;
+  font-size: 13px;
+  color: var(--theme);
+}
+
+// el-tabs
+.el-tabs--card > .el-tabs__header .el-tabs__nav {
+  border-radius: 2px 2px 0 0 !important;
+  .el-tabs__item {
+    font-size: $fontSize;
+    height: 32px !important;
+    line-height: 31px !important;
+  }
+}
+
+// select
+.el-select--mini {
+  .el-input--suffix {
+    .el-input__suffix {
+      .el-input__suffix-inner {
+        .el-input__icon {
+          line-height: 29px !important;
+        }
+      }
+    }
+  }
+}

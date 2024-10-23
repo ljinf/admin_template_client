@@ -1,0 +1,28 @@
+$textColor: #001529;
+$primary: var(--theme);
+$fontSize: 12px;
+
+// navbar
+$navbarBg: #001529;
+$navbarHeight: 48px;
+$navTextColor: #ffffff;
+
+// tags-view
+$tagsViewBg: #ffffff;
+$tagsViewHeight: 50px;
+
+// sidebar
+$menuText: #001529;
+$menuBg: #ffffff;
+$subMenuBg: #ffffff;
+$sideBarHeight: 40px;
+$sideBarWidth: 250px;
+
+// the :export directive for webpack
+:export {
+  menuBg: $menuBg;
+  subMenuBg: $subMenuBg;
+  menuText: $menuText;
+  sideBarHeight: $sideBarHeight;
+  sideBarWidth: $sideBarWidth;
+}
